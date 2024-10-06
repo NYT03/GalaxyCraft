@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('R.jpeg');
+    background-blend-mode: luminosity;
+    overflow: hidden;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#game-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.element {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 14px;
+    border: 1px solid #e0e0e0;
+}
+
+#crafting-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.crafting-slot {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+#craft-btn {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#craft-btn:disabled {
+    background-color: #f9f9f9;
+    color: #999;
+    cursor: not-allowed;
+}
+
+#result-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: black;
+}
+
+#result-area h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#result {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
